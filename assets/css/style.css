@@ -4,18 +4,47 @@ body { font-family: 'Open Sans', sans-serif; color: #333; }
 .container { max-width: 1100px; margin: auto; padding: 2rem 1rem; }
 
 /* Nav */
-.navbar { display: flex; justify-content: space-between; background: #000; position: sticky; top: 0; z-index: 100; }
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background: #000;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  /* 1. Increase height to 1.5× current size */
+  padding: 2.25rem 2rem;
+}
+
 .nav-left { display: flex; align-items: center; }
 .brand { color: #fff; font-family: 'Roboto Slab', serif; font-size: 1.5rem; margin-left: 0.5rem; }
 .nav-links { display: flex; align-items: center; }
-.nav-links a, .dropbtn { color: #fff; text-decoration: none; margin: 0 0.75rem; font-family: 'Roboto Slab', serif; background: none; border: none; }
+.nav-links a, .dropbtn {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 0.75rem;
+  font-family: 'Roboto Slab', serif;
+  background: none;
+  border: none;
+  /* 2. Match all nav-link & dropdown sizes */
+  font-size: 1.65rem;
+}
 .nav-links a:hover, .nav-links a.active, .dropdown:hover .dropbtn { color: #FFA500; }
 .dropdown { position: relative; display: inline-block; margin: 0 0.75rem; }
 .dropdown-content { display: none; position: absolute; background: #fff; min-width: 200px; box-shadow: 0 4px 8px rgba(0,0,0,0.2); }
-.dropdown-content a { color: #333; padding: 0.5rem; display: block; text-decoration: none; }
+.dropdown-content a { color: #333; padding: 0.5rem; display: block; text-decoration: none; font-size: 1rem; }
 .dropdown-content a:hover { background: #f4f4f4; }
 .dropdown:hover .dropdown-content { display: block; }
 .hamburger { display: none; font-size: 1.5rem; color: #fff; cursor: pointer; }
+
+/* PJPL Logo */
+.navbar .logo img {
+  /* 3. Scale logo by 1.5× from its current 60px */
+  height: 90px;
+}
+.navbar .logo span {
+  /* 4. Scale "PJPL" text by 1.5× from its current 2.2rem */
+  font-size: 3.3rem;
+}
 
 /* News list with images */
 .news-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem; }
@@ -45,33 +74,3 @@ body { font-family: 'Open Sans', sans-serif; color: #333; }
 .team-page { text-align: center; }
 .team-logo { max-width: 200px; margin-bottom: 1rem; }
 .team-bio { margin-top: 1rem; font-style: italic; }
-
-/* 1. Make the navbar taller and add padding */
-.navbar {
-  padding: 1.5rem 2rem;   /* increases top/bottom space */
-}
-
-/* 2. Enlarge the PJPL logo */
-.navbar .logo img {
-  height: 60px;           /* was 40px */
-}
-
-/* 3. Enlarge the “PJPL” text */
-.navbar .logo span {
-  font-size: 2.2rem;      /* was 1.5rem */
-}
-
-/* 4. Increase base nav-link size */
-.nav-links a {
-  font-size: 1.1rem;      /* was 1rem */
-}
-
-/* 5. Make the Teams dropdown label slightly larger */
-.nav-links .dropdown > a {
-  font-size: 1.2rem;
-}
-
-/* 6. Keep dropdown-item text at a readable size */
-.nav-links .dropdown-content a {
-  font-size: 1rem;
-}
