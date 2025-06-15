@@ -46,3 +46,37 @@ body { font-family: 'Open Sans', sans-serif; color: #333; }
 .team-page { text-align: center; }
 .team-logo { max-width: 200px; margin-bottom: 1rem; }
 .team-bio { margin-top: 1rem; font-style: italic; }
+
+/* —————————————————————————————
+   Header container
+————————————————————————————— */
+header {
+  height: 100px;              /* increase overall header height */
+}
+
+/* —————————————————————————————
+   Logo and text
+————————————————————————————— */
+header .logo img {
+  height: 80px;               /* make the logo more prominent */
+  width: auto;
+}
+
+header .logo-text {
+  font-size: 2.5rem;          /* bump up the “PJPL” text size */
+  line-height: 80px;          /* vertically center it next to the taller logo */
+}
+
+/* —————————————————————————————
+   Navigation links
+————————————————————————————— */
+.nav-links a {
+  font-size: 1.1rem;          /* slightly larger base font for all links */
+}
+
+/* —————————————————————————————
+   Teams dropdown specifically
+————————————————————————————— */
+.nav-links .dropdown > a {
+  font-size: 1.3rem;          /* make “Teams” stand out a bit more */
+}
