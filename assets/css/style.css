@@ -18,9 +18,9 @@ body { font-family: 'Open Sans', sans-serif; color: #333; }
 .hamburger { display: none; color: #fff; cursor: pointer; }
 
 /* News list with images */
-.news-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem; }
+.news-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1.1fr)); gap: 2rem; }
 .news-item { display: flex; background: #f9f9f9; border-radius: 8px; overflow: hidden; }
-.news-item img { width: 150px; object-fit: cover; }
+.news-item img { width: 250px; object-fit: cover; }
 .news-item div { padding: 1rem; }
 .read-more { font-weight: bold; display: inline-block; margin-top: 0.5rem; }
 
