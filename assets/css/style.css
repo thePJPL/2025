@@ -4,10 +4,10 @@ body { font-family: 'Open Sans', sans-serif; color: #333; }
 .container { max-width: 1100px; margin: auto; padding: 2rem 1rem; }
 
 /* Nav */
-.navbar { display: flex; justify-content: space-between; background: #000; padding: 0.5rem 1rem; position: sticky; top: 0; z-index: 100; }
+.navbar { display: flex; justify-content: space-between; background: #000; padding: 0.7rem 1.2rem; position: sticky; top: 0; z-index: 100; }
 .nav-left { display: flex; align-items: center; }
-.logo { height: 40px; }
-.brand { color: #fff; font-family: 'Roboto Slab', serif; font-size: 1.5rem; margin-left: 0.5rem; }
+.logo { height: 70px; }
+.brand { color: #fff; font-family: 'Roboto Slab', serif; font-size: 1.8rem; margin-left: 0.5rem; }
 .nav-links { display: flex; align-items: center; }
 .nav-links a, .dropbtn { color: #fff; text-decoration: none; margin: 0 0.75rem; font-family: 'Roboto Slab', serif; background: none; border: none; }
 .nav-links a:hover, .nav-links a.active, .dropdown:hover .dropbtn { color: #FFA500; }
