@@ -49,27 +49,22 @@ body { font-family: 'Open Sans', sans-serif; color: #333; }
 
 /* ——— NAVBAR ENLARGED BY ~1.5× ——— */
 .navbar {
-  /* used to be padding: 0.7rem 1.2rem; */
-  padding: 1.05rem 1.8rem;   /* 0.7 × 1.5 = 1.05 ; 1.2 × 1.5 = 1.8 */
+  padding: 1.05rem 1.8rem !important;   /* 0.7 × 1.5 ; 1.2 × 1.5 */
 }
 
 .logo {
-  /* used to be height: 70px; */
-  height: 105px;            /* 70 × 1.5 = 105 */
+  height: 105px !important;            /* 70 × 1.5 */
 }
 
 .brand {
-  /* used to be font-size: 1.8rem; */
-  font-size: 2.7rem;        /* 1.8 × 1.5 = 2.7 */
+  font-size: 2.7rem !important;        /* 1.8 × 1.5 */
 }
 
 .nav-links a,
 .dropbtn {
-  /* if you want the text itself bigger */
-  font-size: 1.125rem;      /* default Open Sans is ~0.75–1rem; bump as needed */
+  font-size: 1.125rem !important;      /* bump link text up */
 }
 
 .hamburger {
-  /* used to be font-size: 1.5rem; */
-  font-size: 2.25rem;       /* 1.5 × 1.5 = 2.25 */
+  font-size: 2.25rem !important;       /* 1.5 × 1.5 */
 }
