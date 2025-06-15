@@ -81,3 +81,27 @@ body { font-family: 'Open Sans', sans-serif; color: #333; }
   width: 100%;
   overflow: hidden;
 }
+
+
+
+/* ——— Mobile Standings Button ——— */
+.mobile-button {
+  display: none;               /* hide by default */
+  text-align: center;
+  background: #FFA500;
+  padding: 0.5rem;
+}
+.mobile-button a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: 'Roboto Slab', serif;
+}
+/* Show only on screens ≤ 768px */
+@media (max-width: 768px) {
+  .mobile-button {
+    display: block;
+  }
+}
+
+
