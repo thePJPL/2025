@@ -49,11 +49,11 @@ body { font-family: 'Open Sans', sans-serif; color: #333; }
 
 /* ——— NAVBAR ENLARGED BY ~1.5× ——— */
 .navbar {
-  padding: 1.05rem 1.8rem !important;   /* 0.7 × 1.5 ; 1.2 × 1.5 */
+  padding: 0.8rem 1.3rem !important;   /* 0.7 × 1.5 ; 1.2 × 1.5 */
 }
 
 .logo {
-  height: 105px !important;            /* 70 × 1.5 */
+  height: 80px !important;            /* 70 × 1.5 */
 }
 
 .brand {
@@ -66,5 +66,5 @@ body { font-family: 'Open Sans', sans-serif; color: #333; }
 }
 
 .hamburger {
-  font-size: 2.25rem !important;       /* 1.5 × 1.5 */
+  font-size: 1.6rem !important;       /* 1.5 × 1.5 */
 }
