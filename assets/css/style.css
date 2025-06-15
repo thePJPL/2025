@@ -25,7 +25,11 @@ body { font-family: 'Open Sans', sans-serif; color: #333; }
 .read-more { font-weight: bold; display: inline-block; margin-top: 0.5rem; }
 
 /* Full-embed iframes */
-.full-embed { width: 100vw; height: calc(100vh - 140px); border: none; }
+.full-embed {
+  width: 100vw;
+  height: calc(100vh - 140px);
+  border: none;
+}
 
 /* Footer full-width */
 .footer { background: #000; color: #fff; padding: 1rem 0; text-align: center; width: 100%; }
@@ -76,13 +80,4 @@ body { font-family: 'Open Sans', sans-serif; color: #333; }
   position: relative;
   width: 100%;
   overflow: hidden;
-}
-
-/* keep the sheet positioned top-left and ready to scale */
-.iframe-container iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  transform-origin: top left;
-  border: none;
 }
