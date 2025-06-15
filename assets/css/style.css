@@ -12,37 +12,58 @@ body { font-family: 'Open Sans', sans-serif; color: #333; }
   position: sticky;
   top: 0;
   z-index: 100;
-  /* Slimmer header */
-  padding: 0.5rem 2rem;
+  /* Slim header */
+  padding: 0.5rem 1rem;
 }
 
-.nav-left { display: flex; align-items: center; }
-.navbar .logo img {
-  /* Smaller logo */
-  height: 40px;
+/* Logo and Brand */
+.navbar img {
+  /* Ensure any logo image stays compact */
+  max-height: 40px;
+  width: auto;
 }
-.navbar .logo span {
-  /* Smaller PJPL text */
+.brand {
   color: #fff;
   font-family: 'Roboto Slab', serif;
-  font-size: 1.5rem;
+  /* Match logo height visually */
+  font-size: 1.25rem;
   margin-left: 0.5rem;
 }
 
-.nav-links { display: flex; align-items: center; }
-.nav-links a, .dropdown > a, .dropbtn {
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+.nav-links a,
+.dropbtn,
+.dropdown > a {
   color: #fff;
   text-decoration: none;
   margin: 0 0.75rem;
   font-family: 'Roboto Slab', serif;
   background: none;
   border: none;
-  /* Base nav-link size */
+  /* Consistent link size */
   font-size: 1rem;
 }
-.nav-links a:hover, .nav-links a.active, .dropdown:hover .dropbtn { color: #FFA500; }
-.dropdown { position: relative; display: inline-block; margin: 0 0.75rem; }
-.dropdown-content { display: none; position: absolute; background: #fff; min-width: 200px; box-shadow: 0 4px 8px rgba(0,0,0,0.2); }
+.nav-links a:hover,
+.nav-links a.active,
+.dropdown:hover .dropbtn {
+  color: #FFA500;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin: 0 0.75rem;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background: #fff;
+  min-width: 200px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
 .dropdown-content a {
   color: #333;
   padding: 0.5rem;
@@ -50,35 +71,102 @@ body { font-family: 'Open Sans', sans-serif; color: #333; }
   text-decoration: none;
   font-size: 0.9rem;
 }
-.dropdown-content a:hover { background: #f4f4f4; }
-.dropdown:hover .dropdown-content { display: block; }
-.hamburger { display: none; font-size: 1.5rem; color: #fff; cursor: pointer; }
+.dropdown-content a:hover {
+  background: #f4f4f4;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.hamburger {
+  display: none;
+  font-size: 1.5rem;
+  color: #fff;
+  cursor: pointer;
+}
 
 /* News list with images */
-.news-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem; }
-.news-item { display: flex; background: #f9f9f9; border-radius: 8px; overflow: hidden; }
-.news-item img { width: 150px; object-fit: cover; }
-.news-item div { padding: 1rem; }
-.read-more { font-weight: bold; display: inline-block; margin-top: 0.5rem; }
+.news-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+}
+.news-item {
+  display: flex;
+  background: #f9f9f9;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.news-item img {
+  width: 150px;
+  object-fit: cover;
+}
+.news-item div {
+  padding: 1rem;
+}
+.read-more {
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 0.5rem;
+}
 
 /* Full-embed iframes */
-.full-embed { width: 100vw; height: calc(100vh - 140px); border: none; }
+.full-embed {
+  width: 100vw;
+  height: calc(100vh - 140px);
+  border: none;
+}
 
 /* Footer full-width */
-.footer { background: #000; color: #fff; padding: 1rem 0; text-align: center; width: 100%; }
-.footer .container { display: flex; flex-direction: column; align-items: center; }
-.sponsor-logos img { height: 50px; margin: 0 1rem; }
+.footer {
+  background: #000;
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+  width: 100%;
+}
+.footer .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sponsor-logos img {
+  height: 50px;
+  margin: 0 1rem;
+}
 
 /* Responsive */
 @media (max-width: 768px) {
-  .nav-links { display: none; flex-direction: column; width: 100%; background: #000; }
-  .nav-links.active { display: flex; }
-  .hamburger { display: block; }
-  .news-item { flex-direction: column; }
-  .news-item img { width: 100%; height: auto; }
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: #000;
+  }
+  .nav-links.active {
+    display: flex;
+  }
+  .hamburger {
+    display: block;
+  }
+  .news-item {
+    flex-direction: column;
+  }
+  .news-item img {
+    width: 100%;
+    height: auto;
+  }
 }
 
 /* Team pages */
-.team-page { text-align: center; }
-.team-logo { max-width: 200px; margin-bottom: 1rem; }
-.team-bio { margin-top: 1rem; font-style: italic; }
+.team-page {
+  text-align: center;
+}
+.team-logo {
+  max-width: 200px;
+  margin-bottom: 1rem;
+}
+.team-bio {
+  margin-top: 1rem;
+  font-style: italic;
+}
