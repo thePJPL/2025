@@ -68,28 +68,3 @@ body { font-family: 'Open Sans', sans-serif; color: #333; }
 .hamburger {
   font-size: 1.6rem !important;       /* 1.5 × 1.5 */
 }
-
-
-/* hide the big iframe under 768px, show a button instead */
-@media (max-width: 768px) {
-  .full-embed { display: none; }
-  .mobile-standings-link {
-    display: block;
-    text-align: center;
-    margin: 2rem 0;
-  }
-  .mobile-standings-link a {
-    display: inline-block;
-    padding: 0.75rem 1.5rem;
-    background: #FFA500;
-    color: #000;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 4px;
-  }
-}
-
-/* hide the link on larger screens */
-@media (min-width: 769px) {
-  .mobile-standings-link { display: none; }
-
