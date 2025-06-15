@@ -71,14 +71,18 @@ body { font-family: 'Open Sans', sans-serif; color: #333; }
 
 
 
+/* container that clips down to the viewport */
 .iframe-container {
   position: relative;
   width: 100%;
-  overflow: hidden;      /* clip any overflow once we scale */
+  overflow: hidden;
 }
+
+/* keep the sheet positioned top-left and ready to scale */
 .iframe-container iframe {
   position: absolute;
   top: 0;
   left: 0;
-  transform-origin: top left;  /* pivot our scale at the top-left corner */
+  transform-origin: top left;
+  border: none;
 }
