@@ -7,18 +7,30 @@ body { font-family: 'Open Sans', sans-serif; color: #333; }
 .navbar {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   background: #000;
   position: sticky;
   top: 0;
   z-index: 100;
-  /* Adjusted height for better fit */
-  padding: 1rem 2rem;
- }
+  /* Slimmer header */
+  padding: 0.5rem 2rem;
+}
 
 .nav-left { display: flex; align-items: center; }
-.brand { color: #fff; font-family: 'Roboto Slab', serif; font-size: 1.5rem; margin-left: 0.5rem; }
+.navbar .logo img {
+  /* Smaller logo */
+  height: 40px;
+}
+.navbar .logo span {
+  /* Smaller PJPL text */
+  color: #fff;
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.5rem;
+  margin-left: 0.5rem;
+}
+
 .nav-links { display: flex; align-items: center; }
-.nav-links a, .dropbtn {
+.nav-links a, .dropdown > a, .dropbtn {
   color: #fff;
   text-decoration: none;
   margin: 0 0.75rem;
@@ -26,36 +38,21 @@ body { font-family: 'Open Sans', sans-serif; color: #333; }
   background: none;
   border: none;
   /* Base nav-link size */
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 .nav-links a:hover, .nav-links a.active, .dropdown:hover .dropbtn { color: #FFA500; }
 .dropdown { position: relative; display: inline-block; margin: 0 0.75rem; }
-.nav-links .dropdown > a {
-  /* Dropdown label match others */
-  font-size: 1.2rem;
-}
 .dropdown-content { display: none; position: absolute; background: #fff; min-width: 200px; box-shadow: 0 4px 8px rgba(0,0,0,0.2); }
 .dropdown-content a {
   color: #333;
   padding: 0.5rem;
   display: block;
   text-decoration: none;
-  /* Keep dropdown items readable */
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 .dropdown-content a:hover { background: #f4f4f4; }
 .dropdown:hover .dropdown-content { display: block; }
 .hamburger { display: none; font-size: 1.5rem; color: #fff; cursor: pointer; }
-
-/* PJPL Logo */
-.navbar .logo img {
-  /* Revert to 60px */
-  height: 60px;
-}
-.navbar .logo span {
-  /* Revert to 2.2rem */
-  font-size: 2.2rem;
-}
 
 /* News list with images */
 .news-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem; }
