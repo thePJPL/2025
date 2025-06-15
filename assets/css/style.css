@@ -4,10 +4,9 @@ body { font-family: 'Open Sans', sans-serif; color: #333; }
 .container { max-width: 1100px; margin: auto; padding: 2rem 1rem; }
 
 /* Nav */
-.navbar { display: flex; justify-content: space-between; background: #000; padding: 0.7rem 1.2rem; position: sticky; top: 0; z-index: 100; }
+.navbar { display: flex; justify-content: space-between; background: #000; position: sticky; top: 0; z-index: 100; }
 .nav-left { display: flex; align-items: center; }
-.logo { height: 70px; }
-.brand { color: #fff; font-family: 'Roboto Slab', serif; font-size: 1.8rem; margin-left: 0.5rem; }
+.brand { color: #fff; font-family: 'Roboto Slab', serif; margin-left: 0.5rem; }
 .nav-links { display: flex; align-items: center; }
 .nav-links a, .dropbtn { color: #fff; text-decoration: none; margin: 0 0.75rem; font-family: 'Roboto Slab', serif; background: none; border: none; }
 .nav-links a:hover, .nav-links a.active, .dropdown:hover .dropbtn { color: #FFA500; }
@@ -16,7 +15,7 @@ body { font-family: 'Open Sans', sans-serif; color: #333; }
 .dropdown-content a { color: #333; padding: 0.5rem; display: block; text-decoration: none; }
 .dropdown-content a:hover { background: #f4f4f4; }
 .dropdown:hover .dropdown-content { display: block; }
-.hamburger { display: none; font-size: 1.5rem; color: #fff; cursor: pointer; }
+.hamburger { display: none; color: #fff; cursor: pointer; }
 
 /* News list with images */
 .news-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem; }
@@ -46,3 +45,31 @@ body { font-family: 'Open Sans', sans-serif; color: #333; }
 .team-page { text-align: center; }
 .team-logo { max-width: 200px; margin-bottom: 1rem; }
 .team-bio { margin-top: 1rem; font-style: italic; }
+
+
+/* ——— NAVBAR ENLARGED BY ~1.5× ——— */
+.navbar {
+  /* used to be padding: 0.7rem 1.2rem; */
+  padding: 1.05rem 1.8rem;   /* 0.7 × 1.5 = 1.05 ; 1.2 × 1.5 = 1.8 */
+}
+
+.logo {
+  /* used to be height: 70px; */
+  height: 105px;            /* 70 × 1.5 = 105 */
+}
+
+.brand {
+  /* used to be font-size: 1.8rem; */
+  font-size: 2.7rem;        /* 1.8 × 1.5 = 2.7 */
+}
+
+.nav-links a,
+.dropbtn {
+  /* if you want the text itself bigger */
+  font-size: 1.125rem;      /* default Open Sans is ~0.75–1rem; bump as needed */
+}
+
+.hamburger {
+  /* used to be font-size: 1.5rem; */
+  font-size: 2.25rem;       /* 1.5 × 1.5 = 2.25 */
+}
