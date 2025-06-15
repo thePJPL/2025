@@ -11,9 +11,9 @@ body { font-family: 'Open Sans', sans-serif; color: #333; }
   position: sticky;
   top: 0;
   z-index: 100;
-  /* Reduced height to original 1.5× size */
-  padding: 1.5rem 2rem;
-}
+  /* Adjusted height for better fit */
+  padding: 1rem 2rem;
+ }
 
 .nav-left { display: flex; align-items: center; }
 .brand { color: #fff; font-family: 'Roboto Slab', serif; font-size: 1.5rem; margin-left: 0.5rem; }
