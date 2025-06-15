@@ -68,3 +68,27 @@ body { font-family: 'Open Sans', sans-serif; color: #333; }
 .hamburger {
   font-size: 1.6rem !important;       /* 1.5 × 1.5 */
 }
+
+
+/* on mobile, scale the sheet down so it fits */
+@media (max-width: 768px) {
+  .iframe-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    /* height here is arbitrary; you can tweak */
+    height: 300px;
+  }
+  .iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* try 0.7 (70%)—adjust up/down to taste */
+    transform: scale(0.7);
+    transform-origin: top left;
+    /* to counteract the scaling, expand the iframe’s own frame */
+    width: calc(100% / 0.7);
+    height: calc(100% / 0.7);
+    border: none;
+  }
+}
