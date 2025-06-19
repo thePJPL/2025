@@ -130,3 +130,26 @@ body { font-family: 'Open Sans', sans-serif; color: #333; }
     display: block;
   }
 }
+
+
+.news-item div {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.news-item div p:nth-of-type(2) {
+  flex-grow: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* show only 3 lines before cutting */
+  -webkit-box-orient: vertical;
+}
+
+.read-more {
+  margin-top: auto;
+  font-weight: bold;
+  display: inline-block;
+}
