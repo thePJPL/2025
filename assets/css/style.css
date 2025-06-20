@@ -199,9 +199,11 @@ body { font-family: 'Open Sans', sans-serif; color: #333; }
   margin-bot
 
 .article-banner {
+  display: block;
   width: 100%;
+  max-width: 800px;
   height: 220px;
   object-fit: cover;
   border-radius: 8px;
-  margin-bottom: 1.5rem;
+  margin: 1.5rem auto;
 }
